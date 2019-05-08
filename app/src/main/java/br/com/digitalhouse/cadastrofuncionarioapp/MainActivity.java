@@ -9,8 +9,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText editTextNome;
     EditText editTextEmail;
-    EditText editTextPassword;
+    EditText editTextEndereco;
+    EditText editTextProfissao;
     Button buttonEnviar;
 
     @Override
@@ -19,27 +21,33 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
+        editTextNome = findViewById(R.id.editTextNome);
         editTextEmail = findViewById(R.id.editTextEmail);
+        editTextEndereco = findViewById(R.id.editTextEndereco);
+        editTextProfissao = findViewById(R.id.editTextProfissao);
         buttonEnviar = findViewById(R.id.buttonEnviar);
 
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                String nome = editTextNome.getText().toString();
                 String email = editTextEmail.getText().toString();
-                String senha = editTextPassword.getText().toString();
+                String endereco = editTextEndereco.getText().toString();
+                String profissao = editTextProfissao.getText().toString();
+
+                if (nome.equals("")) {
+                    Toast.makeText(MainActivity.this, "Nome não pode ser vazio", Toast.LENGTH_SHORT).show();
+                    return;
+                }
 
                 if (email.equals("")) {
                     Toast.makeText(MainActivity.this, "Email não pode ser vazio", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                if (senha.length() < 6 || senha.length() > 6) {
-                    Toast.makeText(MainActivity.this, "Senha deve ter 6 caracteres", Toast.LENGTH_SHORT).show();
-                    return;
-                }
 
-                if (senha.equals("123456")) {
+                if (!(nome.equals("") && email.equals(""))) {
                     Toast.makeText(MainActivity.this, "Ok pode passar :)", Toast.LENGTH_SHORT).show();
                 }
 

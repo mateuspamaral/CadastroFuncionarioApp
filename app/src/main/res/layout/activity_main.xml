@@ -8,48 +8,60 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="175dp"
         android:text="@string/cadastro_funcionario_title"
         android:gravity="center_horizontal|center_vertical"
         android:layout_marginTop="20dp"
         android:textSize="25dp"
         android:textColor="@color/colorTitleText"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome"/>
     <EditText
         android:id="@+id/editTextNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome"
         android:inputType="textPersonName"
         android:maxLength="50"
         android:maxLines="1" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="10dp"/>
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Email"
         android:inputType="textEmailAddress"
         android:maxLength="30"
         android:maxLines="1" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:layout_marginTop="10dp"/>
     <EditText
         android:id="@+id/editTextEndereco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Endereco"
         android:inputType="text"
         android:maxLength="50"
         android:maxLines="1" />
 
-    <EditText
-        android:id="@+id/editTextoProfissao"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Profissao"
+        android:text="Profissão"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/editTextProfissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:inputType="text"
         android:maxLength="50"
         android:maxLines="1" />
