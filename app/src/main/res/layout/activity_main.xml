@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/cadastro_funcionario_title"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/colorTitleText"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editTextEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Endereco"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editTextoProfissao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Profissao"
+        android:inputType="text"
+        android:maxLength="50"
+        android:maxLines="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:background="@color/colorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enviar"
+            android:textColorHint="@color/colorButtonText" />
+    </RelativeLayout>
+
+</LinearLayout>
