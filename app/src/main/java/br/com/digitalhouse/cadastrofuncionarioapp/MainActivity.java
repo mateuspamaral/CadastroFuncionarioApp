@@ -11,8 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     EditText editTextNome;
     EditText editTextEmail;
-    EditText editTextEndereco;
-    EditText editTextProfissao;
     Button buttonEnviar;
 
     @Override
@@ -23,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
 
         editTextNome = findViewById(R.id.editTextNome);
         editTextEmail = findViewById(R.id.editTextEmail);
-        editTextEndereco = findViewById(R.id.editTextEndereco);
-        editTextProfissao = findViewById(R.id.editTextProfissao);
         buttonEnviar = findViewById(R.id.buttonEnviar);
 
         buttonEnviar.setOnClickListener(new View.OnClickListener() {
@@ -33,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
                 String nome = editTextNome.getText().toString();
                 String email = editTextEmail.getText().toString();
-                String endereco = editTextEndereco.getText().toString();
-                String profissao = editTextProfissao.getText().toString();
 
                 if (nome.equals("")) {
                     Toast.makeText(MainActivity.this, "Nome não pode ser vazio", Toast.LENGTH_SHORT).show();
